@@ -14,8 +14,8 @@ li {
 h1 {
     font-family: 'Gugi', cursive;
     color: red;
-    background-color: yellow;
-    border: 3px dashed green;
+    background-color: white;
+    border: 3px dashed blue;
     margin: 25px;
     padding: 25px;
 }
