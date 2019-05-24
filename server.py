@@ -22,7 +22,14 @@ def inference():
     print(req)
     c,h,w = req['cylinders'],req['horsepower'],req['weight']
     prediction = list(model.predict([[c,h,w]]))
-    return jsonify({'c':c,'h': h,'w':w,'prediction':prediction[0] })     
+    return jsonify({'c':c,'h': h,'w':w,'prediction':prediction[0] })
+
+@app.route('/plot',methods = ['GET'])
+def plot():
+    df = pd.read_csv('cars.csv')
+    data = list(zip(df.mpg,df.weight))
+    return jsonify(data)
+
 
 #When we run from command line
 if __name__=='__main__':

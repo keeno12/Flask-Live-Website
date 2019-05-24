@@ -23,9 +23,10 @@ $(document).ready(function(){
     $('#mpg').val(response.prediction)
 
   })
+
   $('#scatter-button').click(async function(){
     console.log($('#graph1')[0])
-    console.log('scatter button clicked')
+    console.log('scatter button was clicked')
     const response = await $.ajax('/plot')
     console.log(response)
     const mpg = response.map(a => a[0])
