@@ -21,8 +21,8 @@ h1 {
 }
 
 #controls {
-    background-color: yellow;
-    border: 3px dashed green;
+    background-color: white;
+    border: 3px dashed blue;
     margin: 25px;
     padding: 25px;
 }
@@ -33,15 +33,15 @@ label {
 }
 
 input {
-    background-color: tomato;
-    border: 1px solid red;
+    background-color: blue;
+    border: 1px solid blue;
     width: 200px;
     ;
 }
 
 #inference-button {
-    background-color: yellow;
-    border: 3px dashed green;
+    background-color: white;
+    border: 3px dashed blue;
     margin: 10px;
     padding: 10px;
 }
